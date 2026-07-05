@@ -1,0 +1,22 @@
+{
+  "name": "backend-iii",
+  "version": "1.0.0",
+  "description": "Proyecto Backend III - Tests funcionales y Docker",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha \"test/**/*.test.js\" --timeout 10000 --exit",
+    "test:functional": "mocha \"test/functional/**/*.test.js\" --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "mocha": "^11.3.0",
+    "nodemon": "^3.1.10",
+    "sinon": "^21.0.0",
+    "supertest": "^7.1.4"
+  }
+}
