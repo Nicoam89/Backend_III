@@ -117,13 +117,13 @@ CMD ["npm", "start"]
 
 ## Decisiones de optimización
 
-< Se utilizó node:24-alpine como imagen base por ser una versión liviana y con menor cantidad de vulnerabilidades detectadas respecto de node:20-alpine. 
+"Se utilizó node:24-alpine como imagen base por ser una versión liviana y con menor cantidad de vulnerabilidades detectadas respecto de node:20-alpine. 
 
-< Se copiaron primero los archivos package.json y package-lock.json para aprovechar la caché de Docker durante la instalación de dependencias.
+Se copiaron primero los archivos package.json y package-lock.json para aprovechar la caché de Docker durante la instalación de dependencias.
 
-< Se utilizó npm ci --omit=dev para instalar únicamente dependencias productivas de forma limpia y reproducible.
+Se utilizó npm ci --omit=dev para instalar únicamente dependencias productivas de forma limpia y reproducible.
 
-< Se agregó USER node para evitar que la aplicación se ejecute como usuario root dentro del contenedor.
+Se agregó USER node para evitar que la aplicación se ejecute como usuario root dentro del contenedor. "
 
 ## Construir imagen Docker local
 
